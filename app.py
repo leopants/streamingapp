@@ -3,6 +3,10 @@ from camera import VideoCamera
 
 app = Flask(__name__, static_folder='static')
 
+@app.route('/')
+def landing():
+    return 'Hello world'
+
 @app.route('/static/')
 def index():
     return render_template('index.html')
