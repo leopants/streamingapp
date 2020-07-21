@@ -7,9 +7,9 @@ app = Flask(__name__, static_folder='static')
 def landing():
     return 'Hello world'
 
-#@app.route('/static/')
-#def index():
-#    return render_template('index.html')
+@app.route('/static/')
+def index():
+    return render_template('index.html')
 
 #def gen(camera):
 #    while True:
