@@ -4,7 +4,14 @@
     <title>Video Streaming Demonstration</title>
   </head>
   <body>
-    <h1>Video Streaming Demonstration</h1>
-    <img width="640" height="360" id="bg" src="{{ url_for('video_feed') }}">
+    <div style="width:50%; margin: auto; padding: 10px; text-align: center;">
+      <h1>Video Streaming Demonstration</h1>
+      <img width="640" height="360" id="bg" src="{{ url_for('video_feed') }}">
+      <div style="padding: 10px">
+        <a href="http://127.0.0.1:8000/logout">
+          <button>Logout</button>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
